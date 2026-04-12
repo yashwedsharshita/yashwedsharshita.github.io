@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Yash & Harshita | Wedding Invitation</title>
+</head>
+
+<body>
+  <!-- Intro Loader -->
+  <div id="intro-loader">
+    <div class="loader-content">
+      <h1>Yash & Harshita</h1>
+      <p>Wedding Invitation</p>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-img-bg-1.png"></video>
+    <div class="hero-overlay"></div>
+    <canvas id="particles"></canvas>
+
+    <div class="hero-inner">
+      <h1><span>Yash</span> & <span>Harshita</span></h1>
+      <p class="reveal">Nov 20, 2026</p>
+      <div id="countdown" class="reveal"></div>
+    </div>
+  </section>
+
+  <div id="progress-bar"></div>
+
+  <!-- <nav id="dot-nav">
+      <ul>
+        <li data-target=".hero" class="active"></li>
+        <li data-target=".story"></li>
+        <li data-target=".engagement"></li>
+        <li data-target=".ceremony"></li>
+        <li data-target=".reception"></li>
+      </ul>
+    </nav> -->
+
+  <canvas id="confetti"></canvas>
+  <script>
+    const timestamp = new Date().getTime();
+    document.write('<link rel="stylesheet" href="styles.css?d=' + timestamp + '" />');
+    document.write('<script src="script.js?d=' + timestamp + '"><\/script>');
+  </script>
+</body>
+</html>
