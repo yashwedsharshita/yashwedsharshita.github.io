@@ -204,7 +204,7 @@ const sectionsData = [
     icon: null,
   },
   {
-    head: "Mrs. Vandana and Mr. Ashutosh Saxena",
+    head: "Mrs. Vandana <br> and <br> Mr. Ashutosh Saxena",
     bodyText: [`<i class="mb-24">Invite you to celebrate the auspicious union of our beloved son</i>`, "Yash Raj🤵", "<i>with</i>", "Harshita Srivastava👰", `<i class="mt-24">(D/o Mrs. Neelam Srivastava and Late Mr. Sanjay Srivastava)</i>`, `<i class="mt-12">We look forward to your presence and blessings on this joyous occasion...</i>`],
     type: "story",
     imageURL: "assets/images/invite.png", // No image tag found in this section in the attached file
@@ -213,7 +213,7 @@ const sectionsData = [
   },
   {
     head: "Engagement💍",
-    bodyText: [`22nd Jun 2026, 06:30 PM Onwards`, `Venue: <a href=\"https://maps.app.goo.gl/3ytN7ibTGA96ypys5\" target=\"_blank\" aria-label=\"View on Google Maps\">Hotel Nakshatra 2.0, Viraj Khand, Lucknow, Location:${locationMarkerSvg}</a>`],
+    bodyText: [`22nd Jun 2026, 06:30 PM Onwards`, `Venue: <a href=\"https://maps.app.goo.gl/3ytN7ibTGA96ypys5\" target=\"_blank\" aria-label=\"View on Google Maps\">Hotel Nakshatra 2.0, Viraj Khand, Lucknow <br> Location:${locationMarkerSvg}</a>`],
     type: "engagement",
     imageURL: "assets/images/engagement_1.png", // No image tag found in this section in the attached file
     icon: "💍",
