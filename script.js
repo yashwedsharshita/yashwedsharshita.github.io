@@ -268,7 +268,7 @@ function createSection(section) {
   `;
 };
 // Remove existing panels except hero
-document.title = `${GROOM_NAME} & ${BRIDE_NAME} | Wedding Invitation`;
+document.title = `${GROOM_NAME} & ${BRIDE_NAME} | Engagement Invitation`;
 document.querySelectorAll(".panel.image-panel").forEach((el) => el.remove());
 
 const getQueryParam = (name) => {
