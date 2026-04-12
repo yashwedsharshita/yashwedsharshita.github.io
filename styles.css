@@ -289,6 +289,18 @@ h2 {
   transition-delay: 1.3s;
 }
 
+.panel .inner.active > *:nth-child(8) {
+  transition-delay: 1.5s;
+}
+
+.panel .inner.active > *:nth-child(9) {
+  transition-delay: 1.7s;
+}
+
+.panel .inner.active > *:nth-child(10) {
+  transition-delay: 1.9s;
+}
+
 .section-bodyText {
   padding: 4px;
 }
