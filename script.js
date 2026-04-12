@@ -204,7 +204,7 @@ const sectionsData = [
     icon: null,
   },
   {
-    head: "<h4>Mrs. Vandana & Mr. Ashutosh Saxena</h4>",
+    head: "<h4>Mrs. Vandana Saxena & Mr. Ashutosh Saxena</h4>",
     bodyText: [`<i class="mb-24">Invite you to celebrate the auspicious union of our beloved son</i>`, "<h3>Yash Raj🤵","<i>with</i>", "Harshita Srivastava👰</h3>", `<i class="mt-24">(D/o Mrs. Neelam Srivastava & Late Mr. Sanjay Srivastava)</i>`, `<i class="mt-12">We look forward to your presence and blessings on this joyous occasion...</i>`],
     type: "story",
     imageURL: "assets/images/invite.png", // No image tag found in this section in the attached file
