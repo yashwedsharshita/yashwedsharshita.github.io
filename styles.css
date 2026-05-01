@@ -163,6 +163,62 @@ body {
   }
 }
 
+.swipe-cue {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.92;
+  animation: swipePulse 2.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.swipe-cue p {
+  margin: 0;
+}
+
+.swipe-arrow {
+  width: 24px;
+  height: 24px;
+  border-left: 2px solid #d4a5ff;
+  border-bottom: 2px solid #d4a5ff;
+  transform: rotate(135deg);
+  animation: swipeBounce 1.6s ease-in-out infinite;
+}
+
+@keyframes swipeBounce {
+  0%,
+  100% {
+    transform: translateY(0) rotate(135deg);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: translateY(10px) rotate(135deg);
+    opacity: 1;
+  }
+}
+
+@keyframes swipePulse {
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
 /* =========================
    PANELS & GLASS CARDS
 ========================= */
