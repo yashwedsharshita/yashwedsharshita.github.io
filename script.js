@@ -213,7 +213,7 @@ const sectionsData = [
   },
   {
     head: "Engagement💍",
-    bodyText: [`22nd Jun 2026, 06:30 PM Onwards`, `Venue: <a href=\"https://maps.app.goo.gl/3ytN7ibTGA96ypys5\" target=\"_blank\" aria-label=\"View on Google Maps\">Hotel Nakshatra 2.0, Viraj Khand, Lucknow <br> Location:${locationMarkerSvg}</a>`],
+    bodyText: [`22nd Jun 2026, 06:30 PM Onwards`, `Venue: <a href=\"https://maps.app.goo.gl/3ytN7ibTGA96ypys5\" target=\"_blank\" aria-label=\"View on Google Maps\">Hotel Nakshatra 2.0, Viraj Khand, Gomti Nagar, Lucknow <br> Location:${locationMarkerSvg}</a>`,`Stay At: <a href=\"https://maps.app.goo.gl/GZChgjuNyX5UwE1CA\" target=\"_blank\" aria-label=\"View on Google Maps\">Hotel Amanda, Viraj Khand, Gomti Nagar, Lucknow <br> Location:${locationMarkerSvg}</a>`],
     type: "engagement",
     imageURL: "assets/images/engagement_1.png", // No image tag found in this section in the attached file
     icon: "💍",
@@ -221,7 +221,7 @@ const sectionsData = [
   },
   {
     head: "Wedding Ceremony👨🏻‍❤️‍👩🏻",
-    bodyText: [`20th Nov 2026, 07:00 PM Onwards`, `Venue: <a href=\"https://maps.app.goo.gl/6x2JdButcWRkAJiDA\" target=\"_blank\" aria-label=\"View on Google Maps\">Chaurasia Lawn, Mahmoorganj, Varanasi <br> Location:${locationMarkerSvg}</a>`, `Stay At: <a href=\"https://maps.app.goo.gl/cVh9Fh5DMmhDoDFC8\" target=\"_blank\" aria-label=\"View on Google Maps\">Hotel Xenia, Near Galaxy Hospital, Mahmoorganj, Varanasi <br> Location:${locationMarkerSvg}</a>`,],
+    bodyText: [`20th Nov 2026, 07:00 PM Onwards`, `Venue: <a href=\"https://maps.app.goo.gl/6x2JdButcWRkAJiDA\" target=\"_blank\" aria-label=\"View on Google Maps\">Chaurasia Lawn, Mahmoorganj, Varanasi <br> Location:${locationMarkerSvg}</a>`, `Stay At: <a href=\"https://maps.app.goo.gl/cVh9Fh5DMmhDoDFC8\" target=\"_blank\" aria-label=\"View on Google Maps\">Hotel Xenia, Near Galaxy Hospital, Mahmoorganj, Varanasi <br> Location:${locationMarkerSvg}</a>`],
     type: "ceremony",
     imageURL: "assets/images/wedding_2.png", // No image tag found in this section in the attached file
     icon: "⛪",
