@@ -166,7 +166,7 @@ body {
 .swipe-cue {
   position: absolute;
   left: 50%;
-  bottom: 10vh;
+  bottom: 12vh;
   transform: translateX(-50%);
   z-index: 4;
   display: flex;
