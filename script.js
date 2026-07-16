@@ -7,7 +7,30 @@ confettiCanvas.height = window.innerHeight;
 let confettiElements = [];
 let confettiStarted = false;
 const countdownEl = document.getElementById("countdown");
-const weddingDate = new Date("Nov 20, 2026 00:00:00").getTime();
+const WORKING_QUERY_PARAM = 'nav';
+const getQueryParam = (name) => {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+};
+const slParam = getQueryParam(WORKING_QUERY_PARAM);
+let weddingDate = new Date().getTime();
+document.getElementById("event-date").innerHTML = '<p class="reveal">' + new Date().toLocaleDateString() + '</p>';
+document.getElementById("event-name").innerHTML = '<p>Invitation</p>';
+if(slParam === "622"){
+  weddingDate = new Date("Jun 22, 2026 00:00:00").getTime();
+  document.getElementById("event-date").innerHTML = '<p class="reveal">Jun 22, 2026</p>';
+  document.getElementById("event-name").innerHTML = '<p>Engagement Invitation</p>';
+}
+else if(slParam === "1124"){
+  weddingDate = new Date("Nov 24, 2026 00:00:00").getTime();
+  document.getElementById("event-date").innerHTML = '<p class="reveal">Nov 24, 2026</p>';
+  document.getElementById("event-name").innerHTML = '<p>Reception Invitation</p>';
+}
+else if(slParam === "112024" || slParam === "0"){
+  weddingDate = new Date("Nov 20, 2026 00:00:00").getTime();
+  document.getElementById("event-date").innerHTML = '<p class="reveal">Nov 20, 2026</p>';
+  document.getElementById("event-name").innerHTML = '<p>Wedding Invitation</p>';
+}
 let timeGapForConfetti = 0;
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
@@ -25,8 +48,6 @@ const BRIDE_NAME = "Harshita";
 const GROOM_NAME = "Yash";
 
 const footerHtml = `<div class="footer-inner"><p>${GROOM_NAME} & ${BRIDE_NAME} ❤️ 2026</p></div>`;
-
-const WORKING_QUERY_PARAM = 'nav';
 
 const locationMarkerSvg = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M480-388q54-50 84-80t47-50q16-20 22.5-37t6.5-37q0-36-26-62t-62-26q-21 0-40.5 8.5T480-648q-12-15-31-23.5t-41-8.5q-36 0-62 26t-26 62q0 21 6 37t22 36q17 20 46 50t86 81Zm0 308Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"/></svg>`;
 
@@ -271,12 +292,6 @@ function createSection(section) {
 document.title = `${GROOM_NAME} & ${BRIDE_NAME} | Wedding Invitation`;
 document.querySelectorAll(".panel.image-panel").forEach((el) => el.remove());
 
-const getQueryParam = (name) => {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(name);
-};
-
-const slParam = getQueryParam(WORKING_QUERY_PARAM);
 let processedSheetData = [];
 const processSheetData = async () => {
   const resolvedSheetData = await getSheetDataFormat();
