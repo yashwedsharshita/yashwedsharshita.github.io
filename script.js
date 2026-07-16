@@ -7,7 +7,7 @@ confettiCanvas.height = window.innerHeight;
 let confettiElements = [];
 let confettiStarted = false;
 const countdownEl = document.getElementById("countdown");
-const weddingDate = new Date("Jun 22, 2026 00:00:00").getTime();
+const weddingDate = new Date("Nov 20, 2026 00:00:00").getTime();
 let timeGapForConfetti = 0;
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
@@ -268,7 +268,7 @@ function createSection(section) {
   `;
 };
 // Remove existing panels except hero
-document.title = `${GROOM_NAME} & ${BRIDE_NAME} | Engagement Invitation`;
+document.title = `${GROOM_NAME} & ${BRIDE_NAME} | Wedding Invitation`;
 document.querySelectorAll(".panel.image-panel").forEach((el) => el.remove());
 
 const getQueryParam = (name) => {
