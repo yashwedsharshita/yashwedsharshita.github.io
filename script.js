@@ -15,7 +15,7 @@ const getQueryParam = (name) => {
 const slParam = getQueryParam(WORKING_QUERY_PARAM);
 let weddingDate = new Date().getTime();
 document.getElementById("event-date").innerHTML = '<p class="reveal">' + new Date().toLocaleDateString() + '</p>';
-document.getElementById("event-name").innerHTML = '<p>Invitation</p>';
+document.getElementById("event-name").innerHTML = '<p>Test Invitation</p>';
 if(slParam === "622"){
   weddingDate = new Date("Jun 22, 2026 00:00:00").getTime();
   document.getElementById("event-date").innerHTML = '<p class="reveal">Jun 22, 2026</p>';
